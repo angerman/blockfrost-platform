@@ -1,7 +1,17 @@
 use bf_common::errors::BlockfrostError;
-use pallas_hardano::display::haskell_error::as_cbor_decode_failure;
+use pallas_hardano::display::haskell_error::{TxCmdError, TxSubmitFail};
 use pallas_primitives::{alonzo::Value, babbage::GenTransactionOutput, conway::Tx};
 use tracing::warn;
+
+// Inlined replacement for the (now-removed) `pallas_hardano::display::haskell_error
+// ::as_cbor_decode_failure`. After pallas commit 3781f63a, `DecoderError` was
+// simplified from `DeserialiseFailure(position, message)` to a plain `String`,
+// and the helper was dropped. The `position` argument is preserved at call
+// sites but no longer carried through the JSON.
+fn as_cbor_decode_failure(message: String, _position: u64) -> Result<String, serde_json::Error> {
+    let error = TxSubmitFail::TxSubmitFail(TxCmdError::TxReadError(vec![message]));
+    serde_json::to_string(&error)
+}
 
 /// Checks if the given transaction is a valid CBOR-encoded transaction, by trying to decode it.
 /// This function is used to validate the transaction before submitting it to the node.

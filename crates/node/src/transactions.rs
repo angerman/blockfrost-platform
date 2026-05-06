@@ -44,8 +44,10 @@ impl NodeClient {
                 Ok(txid)
             },
             Ok(Response::Rejected(reason)) => {
-                let haskell_display = as_node_submit_error(reason)
-                    .unwrap_or_else(|e| format!("Failed to format submit error: {e}"));
+                // pallas commit 3781f63a changed `as_node_submit_error` from
+                // `Result<String, serde_json::Error>` to plain `String` (it now
+                // calls `.unwrap()` internally on the serde_json result).
+                let haskell_display = as_node_submit_error(reason);
                 warn!(
                     connection_id = self.connection_id,
                     "TxSubmitFail: {}, CBOR: {}",
