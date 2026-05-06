@@ -427,7 +427,7 @@ dependencies = [
  "bitflags 2.10.0",
  "cexpr",
  "clang-sys",
- "itertools 0.13.0",
+ "itertools 0.10.5",
  "proc-macro2",
  "quote",
  "regex",
@@ -1457,7 +1457,7 @@ dependencies = [
  "libc",
  "option-ext",
  "redox_users",
- "windows-sys 0.61.2",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -3038,8 +3038,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-addresses"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "base58",
  "bech32 0.9.1",
@@ -3053,8 +3053,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-codec"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "hex",
  "minicbor",
@@ -3064,8 +3064,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-crypto"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "cryptoxide",
  "hex",
@@ -3077,8 +3077,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-hardano"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "binary-layout",
  "hex",
@@ -3097,8 +3097,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-network"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "byteorder",
  "hex",
@@ -3114,8 +3114,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-primitives"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "hex",
  "pallas-codec",
@@ -3126,8 +3126,8 @@ dependencies = [
 
 [[package]]
 name = "pallas-traverse"
-version = "1.0.0-alpha.5"
-source = "git+https://github.com/txpipe/pallas.git?rev=ed422bc0d5a09f77617d4882dd4c71089a8bcdb2#ed422bc0d5a09f77617d4882dd4c71089a8bcdb2"
+version = "1.0.0-alpha.6"
+source = "git+https://github.com/txpipe/pallas.git?rev=3781f63ae4d3552e628f674c52f00c0209d5ca73#3781f63ae4d3552e628f674c52f00c0209d5ca73"
 dependencies = [
  "hex",
  "itertools 0.13.0",
@@ -3741,7 +3741,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.61.2",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -4420,7 +4420,7 @@ dependencies = [
  "getrandom 0.3.2",
  "once_cell",
  "rustix",
- "windows-sys 0.61.2",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
